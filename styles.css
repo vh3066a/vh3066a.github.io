@@ -86,6 +86,10 @@ p, li {
   margin-bottom: .5em;
 }
 
+strong {
+  font-weight: 700;
+}
+
 @media(min-width: 500px) {
   .l-col-2 {
     display: flex;
