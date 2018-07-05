@@ -103,6 +103,21 @@ strong {
     flex-basis: 46%;
   }
 }
+.p-underline {
+  display: block;
+  position: relative;
+}
+.p-underline:after {
+  content: '';
+  position: absolute;
+  bottom: .3em;
+  height: .1em;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #d9b44a;
+  z-index: -1;
+}
 
 .l-wrapper {
   max-width: 900px;
