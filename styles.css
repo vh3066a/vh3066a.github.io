@@ -31,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -55,24 +53,33 @@ body {
   font-weight: 400;
 }
 
+ul {
+  margin-left: 1em;
+}
+
 h1 {
   font-size: 2.5em;
   margin-bottom: .5em;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2em;
   margin-bottom: .5em;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.75em;
   margin-bottom: .5em;
+  line-height: 1.1;
 }
 
 h4 {
   font-size: .8em;
   margin-bottom: .5em;
+}
+
+em {
+  font-style: italic;
 }
 
 p, li {
@@ -86,12 +93,16 @@ p, li {
   }
 
   .l-col-2 div {
-    flex-basis: 45%;
+    flex-basis: 46%;
   }
 }
 
 .l-wrapper {
-  max-width: 800px;
+  max-width: 900px;
   padding: 2em;
   margin: 0 auto;
+}
+
+.resume-section__block {
+  margin-bottom: 2em;
 }
