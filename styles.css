@@ -79,17 +79,19 @@ p, li {
   margin-bottom: .5em;
 }
 
+@media(min-width: 500px) {
+  .l-col-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .l-col-2 div {
+    flex-basis: 45%;
+  }
+}
+
 .l-wrapper {
   max-width: 800px;
   padding: 2em;
   margin: 0 auto;
-}
-
-.l-col-2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.l-col-2 div {
-  flex-basis: 45%;
 }
