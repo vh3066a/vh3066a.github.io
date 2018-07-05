@@ -28,9 +28,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
 
 blockquote, q {
 	quotes: none;
@@ -51,6 +48,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+  color: #3b3b3b;
+  background-color: #f9f9f9;
 }
 
 ul {
@@ -60,6 +59,7 @@ ul {
 h1 {
   font-size: 2.5em;
   margin-bottom: .5em;
+  color: #2c4a52;
 }
 
 h2 {
@@ -71,11 +71,14 @@ h3 {
   font-size: 1.75em;
   margin-bottom: .5em;
   line-height: 1.1;
+  color: #2c4a52;
 }
 
 h4 {
   font-size: .8em;
   margin-bottom: .5em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 
 em {
