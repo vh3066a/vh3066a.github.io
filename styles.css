@@ -56,19 +56,24 @@ ul {
   margin-left: 1em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: .01em;
+}
+
 h1 {
   font-size: 2.5em;
   margin-bottom: .5em;
   color: #2c4a52;
+	border-bottom: 5px solid #d9b44a;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.75em;
   margin-bottom: .5em;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   margin-bottom: .5em;
   line-height: 1.1;
   color: #2c4a52;
@@ -76,9 +81,11 @@ h3 {
 
 h4 {
   font-size: .8em;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
   text-transform: uppercase;
   letter-spacing: .1em;
+	border-left: 5px solid #d9b44a;
+	padding-left: .5em;
 }
 
 em {
@@ -93,38 +100,20 @@ strong {
   font-weight: 700;
 }
 
-@media(min-width: 500px) {
-  .l-col-2 {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .l-col-2 div {
-    flex-basis: 46%;
-  }
-}
-.p-underline {
-  display: block;
-  position: relative;
-}
-.p-underline:after {
-  content: '';
-  position: absolute;
-  bottom: .3em;
-  height: .1em;
-  width: 100%;
-  left: 0;
-  right: 0;
-  background-color: #d9b44a;
-  z-index: -1;
-}
-
 .l-wrapper {
-  max-width: 900px;
-  padding: 2em;
+  max-width: 800px;
+  padding: 3em 2em;
   margin: 0 auto;
 }
 
 .resume-section__block {
-  margin-bottom: 2em;
+  padding-bottom: 2em;
+}
+
+.resume-section {
+	padding: 1em 0;
+}
+
+.resume {
+	padding: 2em 0;
 }
