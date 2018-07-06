@@ -63,12 +63,13 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.5em;
   margin-bottom: .5em;
-  color: #2c4a52;
+  color: #000000;
 	border-bottom: 5px solid #d9b44a;
 }
 
 h2 {
   font-size: 1.75em;
+color: #5a5959;
   margin-bottom: .5em;
 }
 
