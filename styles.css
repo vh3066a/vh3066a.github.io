@@ -6,7 +6,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   color: #3b3b3b;
-  background-color: #ececec;
+  background-color: #fff;
 }
 
 ul {
@@ -33,7 +33,7 @@ h3 {
   font-size: 1.5em;
   margin-bottom: .5em;
   line-height: 1.1;
-  color: #2c4a52;
+  color: #5a5959;
 }
 
 h4 {
