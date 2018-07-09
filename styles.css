@@ -1,47 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
 body {
   font-family: 'Cabin', sans-serif;
@@ -50,12 +7,6 @@ body {
   font-weight: 400;
   color: #3b3b3b;
   background-color: #ececec;
-}
-
-@media(max-width: 400px) {
-	body {
-		font-size: 14px;
-	}
 }
 
 ul {
@@ -70,7 +21,6 @@ h1 {
   font-size: 2.5em;
   margin-bottom: .5em;
   color: #000000;
-	border-bottom: 5px solid #d9b44a;
 }
 
 h2 {
@@ -123,4 +73,48 @@ strong {
 
 .resume {
 	padding: 2em 0;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 5px solid #d9b44a;
+	margin-bottom: 1em;
+}
+
+.header h1 {
+	margin-bottom: 0;
+}
+
+.header-icons svg {
+	fill: currentColor;
+	height: 15px;
+	width: 15px;
+}
+
+.header-icon:hover {
+	background-color: #d9b44a;
+	transition: background 100ms ease-in-out;
+}
+
+.header-icon {
+	transition: background 100ms ease-in-out;
+	display: inline-block;
+	color: #fff; 
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: #3b3b3b;	
+	text-align: center;
+	line-height: 35px;
+}
+
+@media(max-width: 400px) {
+	body {
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 2em;
+	}
 }
