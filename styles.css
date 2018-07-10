@@ -111,6 +111,14 @@ a:hover:before {
 	margin-bottom: 0;
 }
 
+.header-icons a {
+  color: #fff;
+}
+
+.header-icons a:before {
+  display: none;
+}
+
 .header-icons svg {
 	fill: currentColor;
 	height: 15px;
