@@ -57,6 +57,34 @@ strong {
   font-weight: 700;
 }
 
+a, a:visited {
+  color: currentColor;
+  position: relative;
+  text-decoration: none;
+}
+
+a:before {
+  position: absolute;
+  content: '';
+  left: -2px;
+  height: 2px;
+  bottom: -1px;
+  background: #d9b44a;
+  z-index: -1;
+  width: 103%;
+  transition: all 100ms ease-in-out;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:hover:before {
+  height: 100%;
+  transition: all 100ms ease-in-out;
+  
+}
+
 .l-wrapper {
   max-width: 800px;
   padding: 3em 2em;
@@ -113,4 +141,27 @@ strong {
 	h1 {
 		font-size: 2em;
 	}
+}
+
+
+@media print {
+  body {
+    font-size: 10px;
+  }
+  
+  p, li {
+    margin-bottom: 0;
+  }
+  
+  .resume {
+    padding: 1em 0;
+  }
+  
+  .resume-section__block {
+    padding-bottom: 1em;
+  }
+  
+  .l-wrapper {
+    padding: .2em;
+  }
 }
